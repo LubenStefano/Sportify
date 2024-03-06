@@ -1,0 +1,440 @@
+/* Общи стилове */
+* {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+/* Стилове за цялото тяло на страницата */
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: rgba(10, 10, 10, 0.943);
+  color: white;
+  text-align: center;
+}
+
+/* Стилове за навигационното меню */
+.navbar-button {
+  display: none;
+}
+
+.navbar-container {
+  display: none;
+  flex-direction: column;
+  position: absolute;
+  top: 80px;
+  right: 0;
+  width: 100%;
+  height: 90%;
+  background-color: rgba(0, 0, 0, 0.925);
+}
+
+.mobile-nav-links {
+  color: white;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-around;
+  height: 100%;
+  width: 100%;
+  flex-direction: row-reverse;
+  text-align: right;
+  padding: 15px 30px;
+}
+
+.mobile-nav-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 35px;
+}
+
+.mobile-nav-links li {
+  list-style: none;
+  padding: 30px 0;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+  background-color: rgba(0, 0, 0, 0.487);
+}
+
+.navbar-left a,
+.logo #fronter {
+  color: orange;
+  text-decoration: none;
+  font-size: 40px;
+  font-family: "Fjalla One", sans-serif;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 20px;
+}
+
+.nav-links ul {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+}
+
+.nav-links a {
+  display: flex;
+  justify-content: space-between;
+  text-decoration: none;
+  margin: 0 20px;
+  color: rgb(255, 255, 255);
+  padding: 10px;
+  font-size: 20px;
+  transition: 0.1s;
+}
+
+.mobile-photos {
+  display: none;
+}
+
+/* Стилове за калкулатора */
+.calculator {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  flex-direction: row-reverse;
+  margin: 30px 100px;
+  background-color: white;
+  color: black;
+  margin: 0;
+}
+
+.image {
+  background-color: orange;
+  width: 50%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.image img {
+  width: 100%;
+  height: 100%;
+}
+
+.calorie-calculator {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  align-items: center;
+  color: black;
+  width: 100%;
+}
+
+.calculator-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  color: black;
+  width: 100%;
+  font-size: 20px;
+}
+
+.form {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  flex-direction: row;
+  color: black;
+  width: 100%;
+}
+
+.form-info-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  font-size: 30px;
+  height: 100%;
+}
+
+.form-group {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  margin: 10px 0;
+}
+
+.form-group input,
+.form-group select {
+  width: 100%;
+  padding: 10px;
+  font-size: 20px;
+  margin: 10px 0;
+  border: orange 1px solid;
+  border-radius: 3px;
+}
+
+.result {
+  color: black;
+  font-size: 25px;
+}
+
+.form-group button,
+.price {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: orange 1px solid;
+  border-radius: 5px;
+  background-color: orange;
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.info-form {
+  font-size: 30px;
+  height: 100%;
+  text-align: justify;
+}
+
+.important {
+  color: orange;
+  font-weight: bold;
+}
+
+.form-info-container,
+.info-form {
+  width: 50%;
+  margin: 0 25px;
+}
+
+.form h1 {
+  color: orange;
+}
+
+.main-caption {
+  color: orange;
+}
+
+.subscription h1 {
+  font-size: 60px;
+  font-weight: bold;
+}
+
+.subscription-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+  margin: 10px 5px;
+}
+
+.card {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: 50px 25px;
+  border: none;
+  background-color: white;
+  color: black;
+  width: 500px;
+  height: 700px;
+  border-radius: 5px;
+  justify-content: space-around;
+}
+
+#fronter {
+  color: orange;
+  text-decoration: none;
+  font-size: 30px;
+  font-family: "Fjalla One", sans-serif;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 20px;
+}
+
+.card ul {
+  font-size: 22px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+  padding: 10px 50px;
+  text-align: justify;
+}
+
+.card ul li {
+  margin: 5px 0;
+}
+
+.card hr {
+  width: 25%;
+  height: 4px;
+  margin: 10px 0;
+  border: orange 1px solid;
+  background-color: orange;
+}
+
+.price {
+  font-size: 20px;
+  width: 250px;
+  padding: 15px;
+}
+
+.footer-container {
+  background-color: rgba(0, 0, 0, 0.834);
+  color: white;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px 0;
+  width: 100%;
+}
+
+.footer-container a {
+  list-style: none;
+  color: white;
+  text-decoration: none;
+  font-size: 25px;
+  margin: 0 20px;
+  transition: 0.1s;
+}
+
+.footer-container ul {
+  display: flex;
+  list-style: none;
+  justify-content: space-around;
+  align-items: center;
+  margin: 30px;
+}
+
+.footer-social ion-icon {
+  font-size: 35px;
+  margin: 0 20px;
+  transition: 0.1s;
+}
+
+/* Ефекти при ховър */
+.nav-links a:hover,
+.footer-links a:hover,
+.footer-social ion-icon:hover,
+.back-to-top a:hover {
+  color: orange;
+}
+
+.caption-text button:hover,
+.form-group button:hover,
+.price:hover {
+  background-color: rgb(255, 185, 55);
+  border: transparent 1px solid;
+}
+
+@media screen and (max-width: 1280px) {
+
+  /* Стилове за навигационното меню*/
+  * {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-size: 20px;
+  }
+
+  .navbar-button {
+    display: flex;
+  }
+  .nav-links {
+    display: none;
+  }
+
+  .mobile-photos {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background-color: orange;
+  }
+
+  .calculator {
+    flex-direction: column;
+  }
+
+  .form {
+    flex-direction: column;
+  }
+
+  .form h1 {
+    font-size: 40px;
+  }
+
+  .important {
+    font-size: 23px;
+  }
+
+  img {
+    display: none;
+  }
+
+  .subscription h1 {
+    font-size: 30px;
+  }
+
+  .form-info-container,
+  .info-form {
+    margin: 0;
+    padding: 20px;
+    width: 100%;
+  }
+
+  .card {
+    width: 100%;
+
+  }
+
+  .card ul {
+    font-size: 22px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding: 5px 30px;
+    text-align: justify;
+  }
+
+  .subscription-container {
+    flex-direction: column;
+  }
+
+  /*footer*/
+  .footer-container {
+    flex-direction: column;
+    width: 100%
+  }
+
+  .footer-links ul {
+    height: 200px;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 30px;
+  }
+
+  .footer-links ul a {
+    margin: 15px 0;
+    padding: 15px 0;
+  }
+
+  .footer-social ul {
+    flex-direction: row;
+    margin: 0;
+    padding: 0;
+  }
+
+  .back-to-top {
+    display: none;
+  }
+}

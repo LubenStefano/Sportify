@@ -1,0 +1,427 @@
+/* Общи стилове */
+* {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: black;
+    text-align: center;
+}
+
+/* Стилове за главната секция */
+.fronter {
+    background-image: url(../Photos/mainPhoto.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 1080px;
+}
+
+/* Стилове за навигационното меню */
+.navbar-button {
+    display: none;
+}
+
+.navbar-container {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 80px;
+    right: 0;
+    width: 100%;
+    height: 90%;
+    background-color: rgba(0, 0, 0, 0.925);
+
+}
+
+.mobile-nav-links {
+    color: white;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+    height: 100%;
+    width: 100%;
+    flex-direction: row-reverse;
+    text-align: right;
+    padding: 15px 30px;
+}
+
+.mobile-nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 35px;
+}
+
+.mobile-nav-links li {
+    list-style: none;
+    padding: 30px 0;
+
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+    background-color: rgba(0, 0, 0, 0.487);
+}
+
+.navbar-left a,
+.logo #fronter {
+    color: orange;
+    text-decoration: none;
+    font-size: 40px;
+    font-family: 'Fjalla One', sans-serif;
+    ;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 20px;
+}
+
+.nav-links ul {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+}
+
+.nav-links a {
+    display: flex;
+    justify-content: space-between;
+    text-decoration: none;
+    margin: 0 20px;
+    color: rgb(255, 255, 255);
+    padding: 10px;
+    font-size: 20px;
+    transition: 0.1s;
+}
+
+/*снимки за телефон*/
+.mobile-photos {
+    display: none;
+}
+
+/* Стилове за секцията с описание */
+.caption-container {
+    display: flex;
+    text-align: center;
+    color: white;
+    max-width: 100%;
+    height: 1080px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+}
+
+.caption-text {
+    height: 750px;
+}
+
+.caption-text button {
+    padding: 15px 20px;
+    font-size: 30px;
+    background-color: orange;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 20px;
+    transition: 0.2s;
+}
+
+.caption-text a {
+    text-decoration: none;
+    transition: 0.1s;
+    color: white;
+}
+
+/* Стилове за секцията "Здраве" и "За нас" */
+.health,
+.about-us-container {
+    text-align: justify;
+    font-size: 25px;
+    margin: 50px 0;
+    padding: 0 30px;
+}
+
+.health h1,
+.about-us h1 {
+    text-align: center;
+    font-size: 50px;
+    font-weight: bold;
+    color: orange;
+}
+
+.health-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+.about-us-container {
+    font-size: 30px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row-reverse;
+    margin: 50px 25px;
+}
+
+.about-text,
+.about-us-text {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    width: 50%;
+}
+
+.about-imgs {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+}
+
+.about-imgs img {
+    width: 550px;
+    margin: 20px 0;
+}
+
+.about-us-text a {
+    text-decoration: none;
+    color: orange;
+    transition: 0.1s;
+    font-style: italic;
+}
+
+/* Стилове за секцията с коментари */
+.comments-box {
+    display: flex;
+    flex-direction: row;
+}
+
+.comments {
+    width: 80%;
+    overflow: hidden;
+    margin: 0 10%;
+}
+
+.comments-container {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    margin: 50px 25px 10px;
+    transition: transform 0.5s ease;
+}
+
+.comment {
+    font-size: 25px;
+    display: flex;
+    flex: 0 0 23%;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    margin: 10px 30px;
+    padding: 0 50px;
+    height: 550px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    text-align: center;
+    box-shadow: 0 0 15px 0 rgba(220, 220, 220, 0.837);
+}
+
+.center {
+    height: 600px;
+}
+
+.comment img {
+    width: 100px;
+    border: 3px solid orange;
+    border-radius: 50%;
+    margin: 20px 0;
+}
+
+.comment .name {
+    font-size: 20px;
+    margin: 20px 0;
+    font-style: italic;
+    color: black;
+}
+
+.prev-button,
+.next-button {
+    background-color: orange;
+    color: white;
+    padding: 10px 30px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 15px 20px;
+    opacity: 0.7;
+    transition: 0.2s;
+}
+
+.prev-button {
+    margin-right: 20px;
+}
+
+/* Стилове за футъра */
+.footer-container {
+    background-color: rgba(0, 0, 0, 0.834);
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px 0;
+    max-width: 100%;
+}
+
+.footer-container a {
+    list-style: none;
+    color: white;
+    text-decoration: none;
+    font-size: 25px;
+    margin: 0 20px;
+    transition: 0.1s;
+}
+
+.footer-container ul {
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    align-items: center;
+    margin: 30px;
+}
+
+.footer-social ion-icon {
+    font-size: 35px;
+    margin: 0 20px;
+    transition: 0.1s;
+}
+
+/* Ефекти при ховър */
+.nav-links a:hover,
+.footer-links a:hover,
+.footer-social ion-icon:hover,
+.back-to-top a:hover {
+    color: orange;
+}
+
+.caption-text button:hover {
+    background-color: white;
+    color: orange;
+}
+
+.prev-button:hover,
+.next-button:hover {
+    opacity: 1;
+}
+
+/* Медиа заявки */
+@media screen and (max-width: 1280px) {
+
+    /* Стилове за навигационното меню*/
+    .navbar-button {
+        display: flex;
+    }
+
+    .nav-links {
+        display: none;
+    }
+
+    .mobile-photos {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .about-imgs {
+        display: none;
+    }
+
+    .caption-container {
+        height: 100%;
+        font-size: 20px;
+        margin-top: 65px;
+    }
+
+    .caption-text {
+        height: 100%;
+        margin: 25px;
+    }
+
+    .caption-text button {
+        font-size: 25px;
+        padding: 20px;
+        border-radius: 15px;
+        margin: 70px;
+    }
+
+    .about-text,
+    .about-us-text {
+        width: 100%;
+        margin: 20px;
+    }
+
+    .health,
+    .about-us-container,
+    .health-container {
+        padding: 0;
+        margin: 0;
+        font-size: 20px;
+        width: 100%;
+        justify-content: center;
+    }
+
+    .health h1 {
+        font-size: 30px;
+    }
+
+    .about-us h1 {
+        font-size: 40px;
+    }
+
+    .comment {
+        display: none;
+    }
+
+    .prev-button,
+    .next-button {
+        display: none;
+    }
+
+    .footer-container {
+        flex-direction: column;
+
+    }
+
+    .footer-links ul {
+        height: 200px;
+        flex-direction: column;
+        padding: 0;
+        margin: 0;
+        margin-bottom: 30px;
+    }
+
+    .footer-links ul a {
+        margin: 15px 0;
+        padding: 15px 0;
+    }
+
+    .footer-social ul {
+        flex-direction: row;
+        margin: 0;
+        padding: 0;
+    }
+
+    .back-to-top {
+        display: none;
+    }
+}

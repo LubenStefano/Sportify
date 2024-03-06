@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="CSS/services.css">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
+  </style>
+  <title>Sportify Абонаментни Планове</title>
+  <link rel="apple-touch-icon" sizes="180x180" href="FAVICONS/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="FAVICONS/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="FAVICONS/favicon-16x16.png">
+<link rel="manifest" href="FAVICONS/site.webmanifest">
+<link rel="mask-icon" href="FAVICONS/safari-pinned-tab.svg" color="#5bbad5">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">
+</head>
+
+<body>
+  <!--навигационно меню-->
+  <div class="navbar">
+    <div class="navbar-left">
+      <div class="logo">
+        <a href="index.html"><span id="fronter">SPORTIFY</span></a>
+      </div>
+    </div>
+    <div class="navbar-button"><button onclick=toggleNavbar()
+        style="background-color: transparent; border: none;"><ion-icon name="menu-outline"
+          style="color: white; font-size: 40px;"></ion-icon></button></div>
+    <div class="nav-links">
+      <ul>
+        <li title="Повече за нас"><a href="index.html">За нас</a></li>
+        <li title="Услуги"><a href="#services">Услуги</a></li>
+        <li title="Абонаменти планове"><a href="#subscriptions">Абонаменти</a></li>
+        <li title="Онлайн каталог"><a href="shop.html">Магазин</a></li>
+        <li title="Свържете се с нас"><a href="contacts.html">Контакти</a></li>
+      </ul>
+    </div>
+  </div>
+  <!-- navbar on mobile -->
+  <div class="navbar-container">
+    <div class="mobile-nav-links">
+      <ul>
+        <li title="Повече за нас"><a href="index.html">За нас</a></li>
+        <li title="Услуги"><a href="services.html">Услуги</a></li>
+        <li title="Абонаменти планове"><a href="services.html#subscriptions">Абонаменти</a></li>
+        <li title="Онлайн каталог"><a href="shop.html">Магазин</a></li>
+        <li title="Свържете се с нас"><a href="contacts.html">Контакти</a></li>
+      </ul>
+    </div>
+  </div>
+  </div>
+  <!--калориен калкулатор-->
+  <img class="mobile-photos" src="Photos/measure.png" alt="">
+  <div class="calorie-calculator">
+    <div class="calculator-container">
+      <div class="calculator">
+        <div class="form">
+          <div class="form-info-container">
+            <h1 id="services">Телесни мазнини</h1>
+            <p id="result" class="result"> </p>
+            <form>
+              <div class="form-group">
+                <label for="sex">Пол:</label>
+                <select name="sex" id="sex" required>
+                  <option></option>
+                  <option value="1">мъж</option>
+                  <option value="2">жена</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="weight">Тегло (кг):</label>
+                <input type="number" autocomplete="off" name="weight" id="weight" title="Тегло" required>
+              </div>
+              <div class="form-group">
+                <label for="height">Височина (см):</label>
+                <input type="number" autocomplete="off" name="height" id="height" title="Височина" required>
+              </div>
+              <div class="form-group">
+                <label for="age">Възраст:</label>
+                <input type="number" autocomplete="off" name="age" id="age" title="Години" required>
+              </div>
+              <div class="form-group">
+              </div>
+              <div class="form-group">
+                <label for="activity">Активност:</label>
+                <select name="activity" id="activity" required>
+                  <option></option>
+                  <option value="1">Минимална активност</option>
+                  <option value="2">Лека активност</option>
+                  <option value="3">Средна активност</option>
+                  <option value="4">Висока активност</option>
+                  <option value="5">Много висока активност</option>
+                </select>
+              </div>
+              <div class="form-group ">
+                <button type="button" onclick="calculateCalorieIndex()">Изчисли</button>
+              </div>
+            </form>
+          </div>
+          <div class="info-form">
+            <h1>Какво е BMI ?</h1>
+            <p>BMI (<i>Body Mass Index</i>) е индекс, който се използва за определяне на телесната маса на човек.
+              Според резултата от изчислението се определя дали човек е с наднормено тегло, недостатъчно тегло или има
+              нормално тегло.<br>
+              <span class="important">Недостатъчно тегло</span> е под 18.5.<br>
+              <span class="important">Нормалният</span> BMI е между 18.5 и 24.9.<br>
+              <span class="important">Наднормено тегло</span> е между 25 и 29.9.<br>
+              <span class="important">Затлъстяване</span> е над 30.<br>
+
+            </p>
+            <h1>Калории</h1>
+            <p>Калориите се използват за измерване на енергийните нужди на човека. Според резултата от
+              изчислението се определя колко калории трябва да се приемат на ден, <br><span class="important">за да се
+                поддържа теглото на човека</span>.
+          </div>
+        </div>
+        <div class="image">
+          <img src="Photos/measure.png" alt="">
+        </div>
+      </div>
+    </div>
+  </div>
+      <!--Наши абонаменти-->
+      <div class="subscription">
+        <h1 class="main-caption" id="subscriptions">Абонаментни планове</h1>
+        <div class="subscription-container">
+          <div class="card">
+            <span id="fronter">SPORTIFY</span>
+            <h2>Базов</h2>
+            <hr>
+            <ul>
+              <li>Карта Sportify Sport Basic, която Ви позволява
+                да спортувате в подбрана колекция фитнес клубове.
+              </li>
+              <li>Месечен разговор с персонален фитнес инструктор.
+              </li>
+            </ul>
+            <button class="price" onclick="window.alert('Успешно поръчахте!')">Цена: 15лв/месец</button>
+          </div>
+          <div class="card" style="height: 750px;">
+            <span id="fronter">SPORTIFY</span>
+            <h2>Стандартен</h2>
+            <hr>
+            <ul>
+              <li>Карта Sportify Sport Standard</li>
+              <li>Йога</li>
+              <li>Седмичен разговор с персонален фитнес инструктор</li>
+              <li>10% отстъпка върху всички
+                продукти в магазина</li>
+              <li>Диета с рецепти</li>
+              </li>
+            </ul>
+            <button type="button" class="price" onclick="window.alert('Успешно поръчахте!')">Цена: 25лв/месец</button>
+          </div>
+          <div class="card" style="height: 800px;">
+            <span id="fronter">SPORTIFY</span>
+            <h2>Премиум</h2>
+            <hr>
+            <ul>
+              <li>Sportify Sport Premium</li>
+              <li>Йога</li>
+              <li>Пилатес</li>
+              <li>Aеробика</li>
+              <li>Всекидневни персонални консултаци с фитнес
+                инструктори</li>
+              <li> 20% отстъпка върху всички продукти в магазина</li>
+              <li>Диета и тренировъчна програма</li>
+              <li>Персонализиран тренировачен екип по ваше желание</li>
+              <li>Личен спортен екип по ваше желание</li>
+            </ul>
+            <button class="price" onclick="window.alert('Успешно поръчахте!')">Цена: 35лв/месец</button>
+          </div>
+        </div>
+      </div>
+
+      <!--Footer-->
+      </main>
+      <footer>
+        <div class="footer-container">
+          <div class="logo"><a href="index.html"><span id="fronter">SPORTIFY</span></a></div>
+          <div class="footer-links">
+            <ul>
+              <li title="Повече за нас"><a href="index.html">За нас</a></li>
+              <li title="Услуги"><a href="#services">Услуги</a></li>
+              <li title="Абонаменти планове"><a href="#subscriptions">Абонаменти</a></li>
+              <li title="Онлайн каталог"><a href="shop.html">Магазин</a></li>
+              <li title="Свържете се с нас"><a href="contacts.html">Контакти</a></li>
+            </ul>
+          </div>
+          <div class="footer-social">
+            <ul>
+              <li title="Facebook"><a href="https://www.facebook.com/profile.php?id=61556583047501"
+                  target="_blank"><ion-icon name="logo-facebook"></ion-icon></a></li>
+              <li title="Instagram"><a href="https://www.instagram.com/sportify_real/" target="_blank"><ion-icon
+                    name="logo-instagram"></ion-icon></a></li>
+              <li title="Twitter"><a href="https://twitter.com/Sportify_club1" target="_blank"><ion-icon
+                    name="logo-twitter"></ion-icon></a></li>
+            </ul>
+          </div>
+          <div class="back-to-top">
+            <a href="#fronter"><ion-icon name="chevron-up-outline"></ion-icon></a>
+          </div>
+        </div>
+      </footer>
+    
+    <script src="JS/services.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>

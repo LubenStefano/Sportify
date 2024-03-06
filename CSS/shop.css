@@ -1,0 +1,454 @@
+/* Общи стилове за всички елементи */
+* {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+/* Стилове за основния контейнер на страницата */
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: rgba(10, 10, 10, 0.943);
+    color: white;
+    text-align: center;
+}
+
+.mobile-cart-pull {
+    display: none;
+}
+
+/* Стилове за навигационното меню */
+.navbar-button {
+    display: none;
+}
+
+.navbar-container {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 80px;
+    right: 0;
+    width: 100%;
+    height: 90%;
+    background-color: rgba(0, 0, 0, 0.925);
+
+}
+
+#cart-pull,
+.mobile-cart-pull {
+    color: white;
+    font-size: 35px;
+    background-color: transparent;
+    border: none;
+    padding-right: 30px;
+}
+
+.products-amount,
+.mobile-products-amount {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20px;
+    height: 20px;
+    font-size: 15px;
+    margin: 20px 0;
+    background-color: red;
+    color: white;
+    border-radius: 50%;
+    position: absolute;
+    top: 15px;
+    right: 25px;
+}
+
+.mobile-nav-links {
+    color: white;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+    height: 100%;
+    width: 100%;
+    flex-direction: row-reverse;
+    text-align: right;
+    padding: 15px 30px;
+}
+
+.mobile-nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 35px;
+}
+
+.mobile-nav-links li {
+    list-style: none;
+    padding: 30px 0;
+
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+    background-color: rgba(0, 0, 0, 0.487);
+}
+
+.navbar-left a,
+.logo #fronter {
+    color: orange;
+    text-decoration: none;
+    font-size: 40px;
+    font-family: 'Fjalla One', sans-serif;
+    ;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 20px;
+}
+
+.nav-links ul {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+}
+
+.nav-links a {
+    display: flex;
+    justify-content: space-between;
+    text-decoration: none;
+    margin: 0 20px;
+    color: rgb(255, 255, 255);
+    padding: 10px;
+    font-size: 20px;
+    transition: 0.1s;
+}
+
+/* Стилове за кошницата */
+.cart {
+    color: black;
+    background-color: white;
+    font-size: 30px;
+    margin: 0 20px;
+    transition: 0.1s;
+    position: absolute;
+    top: 80px;
+    right: 0;
+    width: 450px;
+    height: 60%;
+    border: orange 2px solid;
+    box-shadow: -13px 14px 100px 20px rgb(0, 0, 0);
+    overflow: auto;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* Стилове за заглавието на кошницата */
+.cart h1 {
+    font-size: 40px;
+    color: orange;
+}
+
+/* Стилове за разделителя в кошницата */
+.cart hr {
+    width: 100%;
+    margin: 20px 0;
+    height: 2px;
+    background-color: orange;
+    border: none;
+}
+
+/* Стилове за общата сума в кошницата */
+
+.btn .check-Out {
+    width: 100%;
+    padding: 20px;
+    font-size: 20px;
+    background-color: orange;
+    color: white;
+    border: none;
+}
+
+/* Стилове за елементите в кошницата */
+.item {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 0;
+    padding: 20px;
+    font-size: 15px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 5px;
+    box-shadow: 0 0 10px 0 rgba(255, 255, 255, 0.33);
+    transition: 0.1s;
+    box-shadow: 0 0 10px 0 rgba(138, 137, 137, 0.275);
+}
+
+/* Стилове за снимката на елемента в кошницата */
+.item img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+/* Стилове за количеството на елемента в кошницата */
+.quantity span {
+    font-size: 25px;
+    margin: 0 20px;
+}
+
+/* Стилове за бутоните за промяна на количеството на елемента в кошницата */
+.quantity button {
+    padding: 5px 10px;
+    font-size: 20px;
+    background-color: orange;
+    border-radius: 50%;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: 0.1s;
+}
+
+/* Стилове за бутоните */
+.btn button {
+    width: 100%;
+    padding: 20px;
+    font-size: 20px;
+    background-color: orange;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+
+/* Стилове за заглавието на магазина */
+.shop h1 {
+    font-size: 60px;
+    color: orange;
+}
+
+/* Стилове за параграфите в магазина */
+.shop p {
+    font-size: 30px;
+    margin: 20px 0;
+    color: white;
+}
+
+/* Стилове за контейнера с продуктите в магазина */
+.shop-items {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 50px 0;
+    color: black;
+    font-size: 20px;
+}
+
+/* Стилове за елементите в магазина */
+.shop-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 300px;
+    height: 450px;
+    margin: 10px;
+    padding: 20px;
+    justify-items: flex-start;
+    background-color: rgb(255, 255, 255);
+    border-radius: 5px;
+    box-shadow: 0 0 10px 0 rgba(255, 255, 255, 0.33);
+}
+
+.item-size {
+    font-size: 20px;
+    margin: 20px 10px;
+}
+
+/* Стилове за снимката на елемента в магазина */
+.shop-item img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin: 20px 0;
+}
+
+/* Стилове за заглавието на елемента в магазина */
+.shop-item h2 {
+    font-size: 30px;
+    margin: 20px 0;
+    color: white;
+}
+
+/* Стилове за параграфите на елемента в магазина */
+.shop-item p {
+    font-size: 20px;
+    margin: 20px 0;
+    color: rgb(0, 0, 0);
+}
+
+/* Стилове за бутоните на елемента в магазина */
+.shop-item button {
+    padding: 10px 20px;
+    font-size: 20px;
+    background-color: orange;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.1s;
+}
+
+/* Стилове за контейнера на футъра */
+.footer-container {
+    background-color: rgba(0, 0, 0, 0.834);
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px 0;
+    width:100%;
+}
+
+/* Стилове за линковете във футъра */
+.footer-container a {
+    list-style: none;
+    color: white;
+    text-decoration: none;
+    font-size: 25px;
+    margin: 0 20px;
+    transition: 0.1s;
+}
+
+/* Стилове за списъка с линкове във футъра */
+.footer-container ul {
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    align-items: center;
+    margin: 30px;
+}
+
+/* Стилове за социалните икони във футъра */
+.footer-social ion-icon {
+    font-size: 35px;
+    margin: 0 20px;
+    transition: 0.1s;
+}
+
+/* Стилове за ховър ефектите */
+.nav-links a:hover,
+.footer-links a:hover,
+.footer-social ion-icon:hover,
+.back-to-top a:hover {
+    color: orange;
+}
+
+.shop-item button:hover {
+    background-color: white;
+    background-color: rgb(255, 185, 55);
+}
+
+.nav-links button:hover {
+    color: orange;
+}
+
+@media screen and (max-width: 1280px) {
+
+    /* Стилове за навигационното меню*/
+    .navbar-button {
+        display: flex;
+    }
+
+    .mobile-cart-pull {
+        display: flex;
+    }
+
+    .nav-links {
+        display: none;
+    }
+
+    .mobile-photos {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .cart-pull {
+        list-style: none;
+    }
+
+    .cart {
+        right: 0;
+        width: 350px;
+    }
+
+    .quantity {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .mobile-products-amount {
+        position: relative;
+        top: 0;
+        right: 40px;
+        z-index: 1;
+    }
+
+    .cart-container {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #shop {
+        font-size: 50px;
+    }
+
+    .shop p {
+        font-size: 20px;
+    }
+
+    .shop-items {
+        margin: 20px 0;
+    }
+
+    .shop-item {
+        width: 300px;
+        height: 450px;
+    }
+
+    .footer-container {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .footer-links ul {
+        height: 200px;
+        flex-direction: column;
+        padding: 0;
+        margin: 0;
+        margin-bottom: 30px;
+    }
+
+    .footer-links ul a {
+        margin: 15px 0;
+        padding: 15px 0;
+    }
+
+    .footer-social ul {
+        flex-direction: row;
+        margin: 0;
+        padding: 0;
+    }
+
+    .back-to-top {
+        display: none;
+    }
+}

@@ -1,0 +1,75 @@
+[
+    {
+        "id": 1,
+        "name": "МЪЖКИ ЕКИП",
+        "price": 60,
+        "image":"Photos/item4.png",
+        "quantity": 1
+        
+    },
+    {
+        "id": 2,
+        "name": "ДАМСКИ ЕКИП",
+        "price": 60,
+        "image":"Photos/item3.png",
+        "quantity": 1
+    }
+    ,
+    {
+        "id": 3,
+        "name": "МЪЖКИ ОБУВКИ",
+        "price": 50,
+        "image":"Photos/item1.png",
+        "quantity": 1
+    },
+    {
+        "id": 4,
+        "name": "ДАМСКИ ОБУВКИ",
+        "price": 50,
+        "image":"Photos/item2.png",
+        "quantity": 1
+    },
+    {
+        "id": 5,
+        "name": "ТЕРМОС БУТИЛКА",
+        "price": 15,
+        "image":"Photos/item5.png",
+        "quantity": 1
+    },
+    {
+        "id": 6,
+        "name": "ШАПКА",
+        "price": 40,
+        "image":"Photos/item6.png",
+        "quantity": 1
+    },
+    {
+        "id": 7,
+        "name": "ЧАНТА",
+        "price": 30,
+        "image":"Photos/item7.png",
+        "quantity": 1
+    },
+    {
+        "id": 8,
+        "name": "ДЪМБЕЛИ",
+        "price": 30,
+        "image":"Photos/item10.png",
+        "quantity": 1
+    },
+    {
+        "id": 9,
+        "name": "ПОСТЕЛКА",
+        "price": 20,
+        "image":"Photos/item8.png",
+        "quantity": 1
+    },
+    {
+        "id": 10,
+        "name": "ПРОТЕИН",
+        "price": 20,
+        "image":"Photos/item9.png",
+        "quantity": 1
+    }
+
+]

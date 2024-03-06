@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="CSS/styles.css">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
+  </style>
+  <script></script>
+  <title>Sportify</title>
+  <link rel="apple-touch-icon" sizes="180x180" href="FAVICONS/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="FAVICONS/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="FAVICONS/favicon-16x16.png">
+<link rel="manifest" href="FAVICONS/site.webmanifest">
+<link rel="mask-icon" href="FAVICONS/safari-pinned-tab.svg" color="#5bbad5">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">
+</head>
+
+<body>
+  <div class="fronter">
+    <!--Navbar-->
+    <div class="navbar">
+      <div class="navbar-left">
+        <div class="logo">
+          <a href="index.html"><span id="fronter">SPORTIFY</span></a>
+        </div>
+      </div>
+      <div class="navbar-button"><button onclick=toggleNavbar()
+          style="background-color: transparent; border: none;"><ion-icon name="menu-outline"
+            style="color: white; font-size: 40px;"></ion-icon></button></div>
+      <div class="nav-links">
+        <ul>
+          <li title="Повече за нас"><a href="#about-us">За нас</a></li>
+          <li title="Услуги"><a href="services.html">Услуги</a></li>
+          <li title="Абонаменти планове"><a href="services.html#subscriptions">Абонаменти</a></li>
+          <li title="Онлайн каталог"><a href="shop.html">Магазин</a></li>
+          <li title="Свържете се с нас"><a href="contacts.html">Контакти</a></li>
+        </ul>
+      </div>
+    </div>
+    <header>
+      <div class="caption-container">
+        <div class="caption-text">
+          <h1>Обичайте се достатъчно,<br>за да водите <br><span style="color: orange;">здравословен начин на
+              живот.</span></h1>
+          <a href="services.html"><button>Започни сега</button></a>
+        </div>
+      </div>
+    </header>
+    <!-- navbar on mobile -->
+    <div class="navbar-container">
+      <div class="mobile-nav-links">
+        <ul>
+          <li title="Повече за нас"><a href="#about-us">За нас</a></li>
+          <li title="Услуги"><a href="services.html">Услуги</a></li>
+          <li title="Абонаменти планове"><a href="services.html#subscriptions">Абонаменти</a></li>
+          <li title="Онлайн каталог"><a href="shop.html">Магазин</a></li>
+          <li title="Свържете се с нас"><a href="contacts.html">Контакти</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <!-- Основно съдържание -->
+  <main>
+    <section class="health">
+      <h1>Защо е важен здравословният начин на живот ?</h1>
+      <div class="health-container">
+        <div class="about-text">
+
+          <p>Здравословният начин на живот е ключът към по-дълъг, по-пълен и по-щастлив живот. Той включва редовно
+            упражнение, здравословна и качествена диета, както и регулярни моменти за отдих и възстановяване.
+            Практикуването на този начин на живот не само подобрява физическото здраве, но и има положителен ефект
+            върху психическото благополучие.</p>
+          <img class="mobile-photos" src="Photos/healthydiet.png" alt="Здравословна храна">
+          <p>Една от най-важните компоненти на здравословния начин на живот е диетата. Консумацията на разнообразни,
+            богати на хранителни вещества храни е от съществено значение за поддържането на оптимално здраве.
+            Зеленчуци,
+            плодове, цели зърнени храни, магарешко и пилешко месо, риба, ядки и семена са само някои от храните, които
+            трябва да бъдат включени в ежедневното хранене. Избягването на преработените храни, захарта и излишните
+            мазнини е също от съществено значение за оптималното функциониране на организма.</p>
+          <img class="mobile-photos" src="Photos/relax.png" alt="Релаксация">
+          <p>Редовното упражнение е също ключов елемент от здравословния начин на живот. Физическата активност не само
+            помага за поддържането на здравословно тегло, но и подобрява сърдечната и дихателната функция, като
+            намалява
+            риска от сърдечни заболявания, диабет и дори някои форми на рак. Редовното спортуване също така повишава
+            настроението, намалява стреса и подобрява сънта.</p>
+
+          <p>Здравословният начин на живот е инвестиция в собственото здраве и благополучие. Той изисква
+            ангажимент, самодисциплина и постоянство, но наградите са несравними. Подобряването на физическото и
+            психическото здраве води до по-пълноценен живот, пълен с енергия и радост.</p>
+        </div>
+        <div class="about-imgs">
+          <img src="Photos/healthydiet.png" alt="Здравословна храна">
+          <img src="Photos/relax.png" alt="Релаксация">
+        </div>
+      </div>
+    </section>
+    <!-- За нас -->
+    <section class="about-us">
+      <h1 id="about-us">За нас</h1>
+      <div class="about-us-container">
+        <div class="about-us-text">
+          <p><i>Sportify</i> е онлайн платформа, която предлага услуги свързани със здравословния начин на живот.
+            Нашата
+            мисия е да помогнем на хората да водят по-здравословен начин на живот, като им предоставим информация и
+            услуги, които да ги подкрепят в този процес.</p>
+          <img class="mobile-photos" src="Photos/training.png" alt="Тренировки">
+          <p>Нашата платформа предлага разнообразни услуги, които да помогнат на хората да подобрят физическата си
+            форма, да поддържат здравословна диета и да подобрят психическото си благополучие. Ние предлагаме
+            персонализирани <a href="services.html">абонаменти</a>, които включват: фитнес карта,
+            индивидуално подбрани тренировки и диети, както и
+            консултации със специалисти в областта на здравословния начин на живот.</p>
+          <img class="mobile-photos" src="Photos/fit.png" alt="Фитнес">
+          <p>Нашата платформа предлага и <a href="shop.html">онлайн магазин</a>, в който клиентите
+            могат да намерят разнообразни хранителни
+            добавки, спортни аксесоари и дрехи, както и книги и ръководства, които да им помогнат в процеса на
+            подобряване на здравословния си начин на живот.</p>
+        </div>
+        <div class="about-imgs">
+          <img src="Photos/training.png" alt="Тренировки">
+          <img src="Photos/fit.png" alt="Фитнес">
+        </div>
+      </div>
+      <!-- Секция с коментари -->
+      <div class="comments">
+        <div class="comments-container">
+          <div class="comment">
+            <img src="Photos/man1.png" alt="" class="pfp">
+            <p>„Благодарение на <i>Sportify</i> успях да подобря физическата си форма и да се чувствам по-добре в
+              кожата си.
+              Препоръчвам на всеки, който иска да води по-здравословен начин на живот.“</p>
+            <p class="name">Александър Петров</p>
+          </div>
+          <div class="comment center">
+            <img src="Photos/woman1.png" alt="" class="pfp">
+            <p>„След като започнах да следвам програмата на <i>Sportify</i>, забелязах значително подобрение във
+              физическата си
+              форма и здравословното си състояние. За всеки, който иска да подобри здравословния си начин
+              на
+              живот.“</p>
+            <p class="name">Мария Борисова</p>
+          </div>
+          <div class="comment">
+            <img src="Photos/man2.png" alt="" class="pfp">
+            <p>
+              "Откакто започнах да използвам <i>Sportify</i>, усещам огромно подобрение във физическата си форма. Сега
+              съм по-силен, по-издръжлив и се чувствам по-енергичен през целия ден. Горещо препоръчвам на всеки!"
+            </p>
+            <p class="name">Константин Божинов</p>
+          </div>
+          <div class="comment">
+            <img src="Photos/man3.png" alt="" class="pfp">
+            <p>"Откакто станах част от общността на <i>Sportify</i>, моето животно качество се промени напълно. Сега
+              имам повече енергия, сила и самочувствие. Приложението е невероятно средство за тези, които искат да
+              направят положителни промени в живота си!"</p>
+            <p class="name">Петър Стефанов</p>
+          </div>
+          <div class="comment center">
+            <img src="Photos/woman2.png" alt="" class="pfp">
+            <p>"С <i>Sportify</i> преживях невероятно преображение на моето тяло и душевно състояние. Тренировките са
+              интензивни, вълнуващи и ме карат да се чувствам жив и насърчителен. Сега съм по-фит, по-здрав и
+              по-щастлив от всякога!"</p>
+            <p class="name">Деница Йорданова</p>
+          </div>
+          <div class="comment">
+            <img src="Photos/woman3.png" alt="" class="pfp">
+            <p>"Препоръчвам <i>Sportify</i> на всички, които търсят начин да подобрят здравословния си начин на живот.
+              Откакто започнах да тренирам с приложението, моето физическо и ментално здраве се усъвършенстваха. Сега
+              съм по-силен, по-издръжлив и по-самоуверен от всякога!"</p>
+            <p class="name">Ивана Владимирова</p>
+          </div>
+        </div>
+        <button class="prev-button"><ion-icon name="caret-back-outline"></ion-icon></button>
+        <button class="next-button"><ion-icon name="caret-forward-outline"></ion-icon></button>
+      </div>
+    </section>
+    <!--Footer-->
+    <footer>
+      <div class="footer-container">
+        <div class="logo"><a href="index.html"><span id="fronter">SPORTIFY</span></a></div>
+        <div class="footer-links">
+          <ul>
+            <li title="Повече за нас"><a href="#about-us">За нас</a></li>
+            <li title="Услуги"><a href="services.html">Услуги</a></li>
+            <li title="Абонаменти планове"><a href="services.html#subscriptions">Абонаменти</a></li>
+            <li title="Онлайн каталог"><a href="shop.html">Магазин</a></li>
+            <li title="Свържете се с нас"><a href="contacts.html">Контакти</a></li>
+          </ul>
+        </div>
+        <div class="footer-social">
+          <ul>
+            <li title="Facebook"><a href="https://www.facebook.com/profile.php?id=61556583047501"
+                target="_blank"><ion-icon name="logo-facebook"></ion-icon></a></li>
+            <li title="Instagram"><a href="https://www.instagram.com/sportify_real/" target="_blank"><ion-icon
+                  name="logo-instagram"></ion-icon></a></li>
+            <li title="Twitter"><a href="https://twitter.com/Sportify_club1" target="_blank"><ion-icon
+                  name="logo-twitter"></ion-icon></a></li>
+          </ul>
+        </div>
+        <div class="back-to-top">
+          <a href="#fronter"><ion-icon name="chevron-up-outline"></ion-icon></a>
+        </div>
+      </div>
+    </footer>
+  </main>
+  </div>
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+  <script src="JS/script.js"></script>
+</body>
+
+</html>
