@@ -24,7 +24,6 @@ Sportify is a modern web platform dedicated to promoting a healthy lifestyle. It
 - [Contacts & Services](#contacts--services)
 - [Customization](#customization)
 - [Credits](#credits)
-- [License](#license)
 
 ---
 
@@ -141,10 +140,5 @@ The shop is powered by [`JS/shop.js`](JS/shop.js):
 
 ---
 
-## License
-
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
-
----
 
 **Enjoy using Sportify and help others lead a healthier life!**
